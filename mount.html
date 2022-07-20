@@ -1,0 +1,172 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+ <link rel="stylesheet" href="style.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+ <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <title> Mount</title>
+</head>
+<body class="home">
+       <nav>
+         <label class="logo">Santubong</label>
+         <ul>
+            <li><a  href="index.html">Home</a></li>
+            <li>
+               <a href="about.html">About
+               <i class="fas fa-caret-down"></i>
+               </a>
+               <ul>
+                  <li><a href="history.html">History</a></li>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="aboutlocalpeople.html">About local people</a></li>
+                   <li><a href="aboutlocalproduct.html">Local Product</a></li>
+               </ul>
+            </li>
+            <li>
+               <a href="#">Tourism places
+               <i class="fas fa-caret-down"></i>
+               </a>
+               <ul>
+                  <li><a href="beach.html">Beach</a></li>
+                   <li><a href="culturalplace.html">Cultural Place</a></li>
+                  <li><a href="mount.html">Mount</a></li>
+                   
+               </ul>
+            </li>
+            <li>
+               <a href="placetoeat.html">Place to eat
+               <i class="fas fa-caret-down"></i>
+               </a>
+               <ul>
+                  <li><a href="placetoeat.html">Seafood</a></li>
+                 
+               </ul>
+            </li>
+            <li>
+               <a href="accomodation.html">Accomodation
+               <i class="fas fa-caret-down"></i>
+               </a>
+               <ul>
+                   <li><a href="accomodation.html">Accomodation</a></li>
+                  <li><a href="hotel.html">Hotel</a></li>
+                  <li><a href="homestay.html">Homestay</a></li>             
+               </ul>
+            </li>
+             <li><a href="nearest.html">Nearest Essentials </a></li>
+             <li><a href="galleryf.html">Gallery</a></li>
+         </ul>
+      </nav>
+      </body>
+      <br>
+      <br>
+<body id="myBody23">
+<center>
+<h1 id="round23" style="font-family:Gabriola;">Mount of Santubong</h1> </center>
+<br>
+<br>
+<div id="container23">
+  <img src="waterfall.jpg" alt="waterfall" style="width:1264px;height:450px;">
+  <div id="text-block23">
+   <h1 style="color:white;text-shadow:1px 1px 0 #444" >HIKE-ADVENTURE-REFRESHING</h1>
+    </div>
+</div>
+<br>
+<br>
+<center><h1  class="normal"><a class="ex2">LIST OF WATERFALLS</a></H1></CENTER>
+<br>
+<center>
+<button class="accordion" ><b>Santubong Embang Waterfall</b></button>
+<div class="panel">
+  <h3>Approximately about 7 hours to reach here. The waterfall is estimated about 40 meter drop.</h3>
+</div>
+
+<button class="accordion"><b>Santubong National Park</b></button>
+<div class="panel">
+  <h3>It is a national park within Kuching's division. Only climbing and trekking are allowed. The activity of camping are not allowed.</h3>
+</div>
+<br>
+<br>
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+
+<div class="w3-content w3-section" style="max-width:500px">
+  <img class="mySlides" src="san.jpg" style="width:100%" alt= "top view from the mount of Santubong">
+  <img class="mySlides" src="san2.jpg" style="width:100%" alt="top view from the mount of Santubong">
+  <img class="mySlides" src="san3.jpg" style="width:100%" alt="map of the trails">
+  <img class="mySlides" src="san4.jfif" style="width:100%" alt="ladder to climb">
+</div>
+<center><i><p>cc:FlyKLIA and Takayashi Tetsuka<p></i></center>
+<br>
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 1 seconds
+}
+</script>
+
+<center><h1 class="normal"><a class="ex2">HIKING ACTIVITY</a></H1>
+<h3>The best months to go hiking is June through September since it is drier than other months. Hence, it is advised to check the forecast beforehand.<br> Do not forget to bring a medkit for emergency. Along the way, you may found many types of flora and fauna.<br> Please do not damage it.<br>Let's take care of the nature by embracing it in a right way!</h3>
+</center>
+<button onclick="topFunction()" id="myBtn" title="Top">Top</button>
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+<br>
+<!------footer start--------->
+<footer>
+      <p>Wonderful Santubong</p>
+      <p>For more information about Santubong Community - Please click on the link below to subscribe to our channel:</p>
+      <div class="social">
+  <a href="mailto:wonderfulsantubong@gmail.com"><i class='bx bx-envelope'></i></a>
+          <a href="https://twitter.com/WSantubong?t=81FLgTBbNCbpLAe1T9tThw&s=09"><i class='bx bxl-twitter'></i></a>
+          <a href="https://www.instagram.com/wonderfulsantubong_2022/"><i class='bx bxl-instagram-alt'></i></a>
+          <a href="webmaster.html"><i class='bx bxl-wikipedia'></i></a>
+      </div>
+      <p class="end">© 2022 Wonderful Santubong. All Rights Reserved.
+          Faculty of Information Management, UiTM </p>
+  </footer>
+</body>
+</html>
